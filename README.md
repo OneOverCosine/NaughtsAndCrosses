@@ -12,6 +12,10 @@ In this version of the game, the 'computer' is player 2.
 The things I want this programme to do. No use in writing any code if I don't have a good plan first.
 
 - [ ] As a player, so that I can interact with the game, I'd like to see the grid
+    - [x] Display grid as an array of arrays
+    - [ ] Display grid as it is in the physical game
 - [ ] As a player, so that I can interact with the game, I'd like to use the keyboard to make inputs
 - [ ] As a player, so that I can see the state of the game, I'd like to see where the Xs and Os have been placed
+    - [x] Show values as is so `0`, `1`, and `2` for empty, X and O
+    - [ ] Show values as in the physical game, so ` `, `X`, and `O`
 - [ ] As a player, so that the game is fun, I'd like the computer to place a symbol on its turn

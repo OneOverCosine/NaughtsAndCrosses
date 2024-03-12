@@ -16,6 +16,23 @@ public class Grid {
     }
 
     public int checkWinner() {
+        // it works...
+        int[][][] linesToCheck = {
+                {{0,0}, {0,1}, {0,2}}, {{1,0}, {1,1}, {1,2}}, {{2,0}, {2,1}, {2,2}}, {{0,0}, {1,0}, {2,0}},
+                {{0,1}, {1,1}, {2,1}}, {{0,2}, {1,2}, {2,2}}, {{0,2}, {1,1}, {2,0}}, {{0,0}, {1,1}, {2,2}}};
+
+        for (int[][] line : linesToCheck) {
+            int value = 1;
+
+            for (int[] coord : line) {
+                value *= grid[coord[0]][coord[1]];
+            }
+
+            if (value == 1 || value == 8) return value;
+
+            System.out.println("The value of this line is " + value);
+        }
+
         return -1;
     }
 }
